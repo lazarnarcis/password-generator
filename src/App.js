@@ -10,7 +10,7 @@ export default function App() {
     const [initialValueOfSpecialCharacters, includeSpecial] = useState(true)
     const [capsOn, setCapsOn] = useState(true)
     const [startSound] = useState(new Audio(sound))
-
+    
     const copyPass = () => {
         console.log(password)
         navigator.clipboard.writeText(password)
@@ -76,7 +76,7 @@ export default function App() {
             <div className="elements">
                 <input 
                     type="checkbox" 
-                    name="numbers" 
+                    name="numbers"
                     onChange={() => setIncludeNumbers()} 
                     defaultChecked={initialValueOfNumbers} 
                     id="numbers"

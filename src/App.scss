@@ -1,17 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    background-color: rgb(211, 255, 251);
 }
 
 .text-password {
-    background-color: grey;
+    background-color: rgb(61, 136, 153);
+    color: white;
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
     max-width:200px;
     word-wrap:break-word;
+}
+.App {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: linear-gradient(to top right, lightgreen, lightblue);
+    padding: 20px;
+    border-radius: 25px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -51,7 +62,15 @@ input[type=number] {
     transition: .3s;
     text-align: center;
 }
+h1 {
+    color: white;
+}
 input:focus {
     border: 2px solid rgb(21, 116, 119);
     outline: none;
+}
+@media (max-width: 750px) { 
+    .App {
+        width: 80%;
+    }
 }
