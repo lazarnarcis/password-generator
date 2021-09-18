@@ -107,7 +107,7 @@ export default function App() {
                     id="length"
                 />
                 <span>
-                    <label for="length">Letters of password (4-15)</label>
+                    <label for="length">Letters of password (3-50)</label>
                 </span>
             </div>
             <button
