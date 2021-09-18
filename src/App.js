@@ -1,4 +1,5 @@
 import React, { useState } from "react" 
+import sound from "./sound-when-generate.mp3"
 
 export default function App() {
     const [lengthPassword, setLengthPassword] = useState("8")
@@ -8,6 +9,7 @@ export default function App() {
     const [initialValueOfNumbers, includeNumbers] = useState(true);
     const [initialValueOfSpecialCharacters, includeSpecial] = useState(true)
     const [capsOn, setCapsOn] = useState(true)
+    const [startSound] = useState(new Audio(sound))
 
     const copyPass = () => {
         console.log(password)
@@ -57,6 +59,7 @@ export default function App() {
         }
         setPassword(initialString)
         console.log(`Length of password generated: ${initialString.length} characters`)
+        startSound.play()
     }
     const setIncludeNumbers = () => {
         includeNumbers(!initialValueOfNumbers)
