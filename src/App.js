@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 export default function App() {
     const [lengthPassword, setLengthPassword] = useState("8")
-    const [password, setPassword] = useState("Click button to generate a password!")
+    const [password, setPassword] = useState("Click the 'Generate Password' button to generate a password!")
     const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     const special = ["`", "!", "@", "#", "$", "%", "^", "^", "&", "*", "(", ")", "-", "=", "+"]
     const [initialValueOfNumbers, includeNumbers] = useState(true);
@@ -85,8 +85,9 @@ export default function App() {
                     name="numbers" 
                     onChange={() => updateCaps()} 
                     defaultChecked={capsOn} 
+                    id="capslock"
                 />
-                <span>Must contain capital letters</span>
+                <span><label for="capslock">Must contain capital letters</label></span>
             </div>
             <div className="elements">
                 <input 
@@ -94,17 +95,19 @@ export default function App() {
                     name="special" 
                     onChange={() => setSpecialCharacters()} 
                     defaultChecked={initialValueOfSpecialCharacters} 
+                    id="characters"
                 />
-                <span>Include special characters (like ~!@#$%)</span>
+                <span><label for="characters">Include special characters (like ~!@#$%)</label></span>
             </div>
             <div className="elements">
                 <input 
                     type="number" 
                     onChange={ e => setLengthPassword(e.target.value) } 
                     value={lengthPassword}
+                    id="length"
                 />
                 <span>
-                    Letters of password (4-15)
+                    <label for="length">Letters of password (4-15)</label>
                 </span>
             </div>
             <button
@@ -113,7 +116,7 @@ export default function App() {
             >
                 Generate Password
             </button>
-            <p>Password Generated: <span className="text-password" title="Click to copy" onClick={() => copyPass()}>{ password }</span></p>
+            <p>Password Generated: <p className="text-password" title="Click to copy" onClick={() => copyPass()}>{ password }</p></p>
         </div>
     )
 }
