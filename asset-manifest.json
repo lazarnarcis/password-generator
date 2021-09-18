@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/password-generator/static/css/main.db39dc22.chunk.css",
+    "main.css": "/password-generator/static/css/main.fa6d6ca3.chunk.css",
     "main.js": "/password-generator/static/js/main.76132030.chunk.js",
     "main.js.map": "/password-generator/static/js/main.76132030.chunk.js.map",
     "runtime-main.js": "/password-generator/static/js/runtime-main.038a5f94.js",
@@ -8,14 +8,14 @@
     "static/js/2.e7ae4fda.chunk.js": "/password-generator/static/js/2.e7ae4fda.chunk.js",
     "static/js/2.e7ae4fda.chunk.js.map": "/password-generator/static/js/2.e7ae4fda.chunk.js.map",
     "index.html": "/password-generator/index.html",
-    "static/css/main.db39dc22.chunk.css.map": "/password-generator/static/css/main.db39dc22.chunk.css.map",
+    "static/css/main.fa6d6ca3.chunk.css.map": "/password-generator/static/css/main.fa6d6ca3.chunk.css.map",
     "static/js/2.e7ae4fda.chunk.js.LICENSE.txt": "/password-generator/static/js/2.e7ae4fda.chunk.js.LICENSE.txt",
     "static/media/sound-when-generate.676dc5b3.mp3": "/password-generator/static/media/sound-when-generate.676dc5b3.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.038a5f94.js",
     "static/js/2.e7ae4fda.chunk.js",
-    "static/css/main.db39dc22.chunk.css",
+    "static/css/main.fa6d6ca3.chunk.css",
     "static/js/main.76132030.chunk.js"
   ]
 }
