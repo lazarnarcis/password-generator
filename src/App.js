@@ -76,8 +76,9 @@ export default function App() {
                     name="numbers" 
                     onChange={() => setIncludeNumbers()} 
                     defaultChecked={initialValueOfNumbers} 
+                    id="numbers"
                 />
-                <span>Include numbers from 0-9</span>
+                <span><label for="numbers">Include numbers from 0-9</label></span>
             </div>
             <div className="elements">
                 <input 
@@ -100,14 +101,14 @@ export default function App() {
                 <span><label for="characters">Include special characters (like ~!@#$%)</label></span>
             </div>
             <div className="elements">
-                <input 
+                    <label for="length">The password contains </label><input 
                     type="number" 
                     onChange={ e => setLengthPassword(e.target.value) } 
                     value={lengthPassword}
                     id="length"
                 />
                 <span>
-                    <label for="length">Letters of password (3-50)</label>
+                    <label for="length"> characters (3-50)</label>
                 </span>
             </div>
             <button

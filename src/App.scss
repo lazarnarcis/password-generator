@@ -28,6 +28,9 @@ input::-webkit-inner-spin-button {
 .button:hover {
     background-color:rgb(21, 116, 119);
 }
+.elements {
+    margin: 5px;
+}
 input[type=number] {
     -moz-appearance:textfield;
     width: 20px;
