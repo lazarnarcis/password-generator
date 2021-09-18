@@ -9,12 +9,23 @@ body {
     background-color: grey;
     padding: 5px;
     border-radius: 10px;
+    margin: 10px;
+    max-width:200px;
+    word-wrap:break-word;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     display: none; 
     -webkit-appearance: none;
     margin: 0;
+}
+p {
+    margin: 0;
+}
+#text-when-generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button {
     border: none;

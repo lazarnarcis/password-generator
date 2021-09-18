@@ -120,7 +120,7 @@ export default function App() {
             >
                 Generate Password
             </button>
-            <p>Password Generated: <p className="text-password" title="Click to copy" onClick={() => copyPass()}>{ password }</p></p>
+            <p id="text-when-generate">Password Generated: <p className="text-password" title="Click to copy" onClick={() => copyPass()}>{ password }</p></p>
         </div>
     )
 }
