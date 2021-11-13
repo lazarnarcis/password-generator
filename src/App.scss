@@ -3,12 +3,12 @@ body {
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: rgb(211, 255, 251);
+    background-color: lightgrey;
 }
 
 .text-password {
-    background-color: rgb(61, 136, 153);
-    color: white;
+    border: 1px solid black;
+    color: black;
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
@@ -20,9 +20,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    background: linear-gradient(to top right, lightgreen, lightblue);
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px grey;
+    background: white;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -40,34 +41,35 @@ p {
 }
 .button {
     border: none;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: lightseagreen;
-    color: white;
+    padding: 10px;
+    background: linear-gradient(to bottom, white, lightgrey);
+    border: 1px solid lightgrey;
     cursor: pointer;
-    transition: .3s;
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 2.5px grey;
 }
 .button:hover {
-    background-color:rgb(21, 116, 119);
+    background: linear-gradient(to top, white, lightgrey);
 }
 .elements {
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 input[type=number] {
     -moz-appearance:textfield;
     width: 20px;
-    border: 2px solid lightblue;
+    border: 2px solid grey;
     border-radius: 10px;
     padding: 5px;
     transition: .3s;
     text-align: center;
 }
-h1 {
-    color: white;
-}
 input:focus {
-    border: 2px solid rgb(21, 116, 119);
+    border: 2px solid black;
     outline: none;
+    background-color: lightgrey;
 }
 @media (max-width: 750px) { 
     .App {
